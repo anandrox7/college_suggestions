@@ -1,8 +1,29 @@
 <!DOCTYPE html>
 <html>
-<title>Airline-delay-Prediction App</title>
+
+<title>Suggest Colleges</title>
+<head>
+<style>
+#ambic{background-color: red}
+</style>
+</head>
 <body>
-<h3> Rating Prediction: {{ prediction }} </h3>
+<h2> Suggested Colleges: </h2>
+
+<h3> Ambitious Category Colleges: </h3>
+{% for i in ambi%}
+<ul><li>{{i}}</li></ul>
+{% endfor %}
+
+<h3> Moderate Category Colleges: </h3>
+{% for i in mod%}
+<ul><li>{{i}}</li></ul>
+{% endfor %}
+
+<h3> Safe Category Colleges: </h3>
+{% for i in safe%}
+<ul><li>{{i}}</li></ul>
+{% endfor %}
 
 
 </body>
